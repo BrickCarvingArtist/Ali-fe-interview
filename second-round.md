@@ -130,5 +130,8 @@ html
 	.bind("click", function(e){
 		console.log(e, 1234);
 	})
-	.unbind("click", a);
+	.unbind("click", a)
+	.bind("click", function(e){
+		console.log(e, 12345);
+	});
 ```
