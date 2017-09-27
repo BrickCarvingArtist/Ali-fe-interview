@@ -106,7 +106,8 @@ Element.prototype.unbind = function(event, callback, isCapture){
 		return this;
 	}
 	try{
-		return this.event.removeEventListener(event, callback);
+		this.event.removeEventListener(event, callback);
+		return this;
 	}catch(e){}
 };
 ```
